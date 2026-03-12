@@ -26,7 +26,29 @@ O Bootstrap usa um sistema de grid de 12 colunas para layout responsivo.
 - `.row`
 - `.col`, `.col-sm`, `.col-md`, `.col-lg`, `.col-xl`
 
-### Exemplo de Grid
+### Exemplo de Gridz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ```html
 <div class="container">
   <div class="row">

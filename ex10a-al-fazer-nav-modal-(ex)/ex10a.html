@@ -5,12 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contato</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
-    
 
-    <!-- 1ª Digitação (Aqui) -->
 
+    <!-- 1° Digitação aqui -->
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Site</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <!-- Botão rosa do lado de Produtos -->
+                    <li class="nav-item">
+                        <button class="btn btn-sm" style="background-color: #e91e8c; color: white;"
+                            data-bs-toggle="modal" data-bs-target="#pedidoModal">
+                            Contato
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="pedidoModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Contato</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="custom-form needs-validation" novalidate>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text custom-icon">
+                                    <i class="bi bi-person"></i>
+                                </span>
+                                <input type="text" class="form-control custom-input" placeholder="Nome" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text custom-icon">
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+                                <input type="email" class="form-control custom-input" placeholder="E-mail" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <span class="input-group-text custom-icon">
+                                    <i class="bi bi-chat-dots"></i>
+                                </span>
+                                <textarea class="form-control custom-input" rows="3" placeholder="Mensagem" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn" style="background-color: #e91e8c; color: white;">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <script>
     (function () {
@@ -27,7 +97,6 @@
         })
     })()
 </script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
